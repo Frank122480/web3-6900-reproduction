@@ -1,6 +1,7 @@
 # Web3 issue reproduction
 
-web3: v4.4
+Web3js: `v4.4`
+
 issue: <https://github.com/web3/web3.js/issues/6900>
 
 If server closes connection after confirming tx sent, it'll crash the process
@@ -54,5 +55,5 @@ FetchError: request to http://localhost:36448/ failed, reason: connect ECONNREFU
 
 ```
 
-The application returns with non 0 exit code even though all promises in index.js are caught. This means 
+The application returns with non 0 exit code even though all promises in index.js are caught. This means
 there's an unhandled exception deep within web3

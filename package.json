@@ -1,0 +1,12 @@
+{
+  "name": "web3-unhandled-send-tx",
+  "version": "0.0.1",
+  "description": "Reproduce an unhandled exception error in web3 sendTransaction",
+  "main": "index.js",
+  "author": "arijoon",
+  "license": "MIT",
+  "private": false,
+  "dependencies": {
+    "web3": "4.4.0"
+  }
+}

@@ -35,6 +35,11 @@ const run = async ({
     ignoreFillingGasLimit: true,
   })
 
+  // With this promise caught, there should be no unhandled rejection
+  txSent.catch(error => {
+    console.error('Error in sendSignedTransaction response', error)
+  })
+
   return new Promise((resolve, reject) => {
     txSent.once('sent', () => {
       console.error('Transction was sent')
